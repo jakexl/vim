@@ -3,6 +3,9 @@ call plug#begin('~/.vim/plugged')
   " GUI {
   Plug 'flazz/vim-colorschemes'
   " }
+  " VCS {
+  Plug 'tpope/vim-fugitive'
+  " }
   " Languages {
   Plug 'Valloric/YouCompleteMe', { 'do': './install.py --omnisharp-completer' }
   " }
@@ -54,6 +57,9 @@ set guifont=Hasklig-Light:h14
 set lines=76
 let g:molokai_original = 1
 colorscheme molokai
+" }
+" Fugitive {
+nnoremap <leader>gs :Gstatus<CR>
 " }
 " C# {
 augroup csharp
